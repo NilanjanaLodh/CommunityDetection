@@ -24,10 +24,11 @@ WalkTrap            | input5.txt
 
 All these files (including the original DBLP dataset) are available in *dataset/* directory
 
-## Running and Testing ## 
-In the project directory type :
+## Running and Testing
+cd to  the project directory and type :
 ```bash
-$ make run
+username:~/custom_path_here/CommunityDetection$ make run
 ```
 This prints the fscore of our merged community detection algorithm.
+
 
