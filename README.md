@@ -4,10 +4,10 @@ This project aims to merge the results of different community detection algorith
 
 ## Dependencies ##
 Python 2.7 must be installed and the following python libraries must be installed for the project to run.
-*[NetworkX](https://networkx.github.io/)
-*[python-louvain](https://pypi.python.org/pypi/python-louvain/0.3/)
-*[MatplotLib](http://matplotlib.org/)
-*[Pickle](https://docs.python.org/2/library/pickle.html)
+* [NetworkX](https://networkx.github.io/)
+* [python-louvain](https://pypi.python.org/pypi/python-louvain/0.3/)
+* [MatplotLib](http://matplotlib.org/)
+* [Pickle](https://docs.python.org/2/library/pickle.html)
 
 ## Dataset ##
 
@@ -32,11 +32,11 @@ $ make run
 This prints the fscore of our merged community detection algorithm.
 
 Apart from that , it also generates the following output files
-*weighted_graph.out : The 'merged' weighted graph formed from input1.txt .. input5.txt
-*pruned\_weighted\_graph.out : The above graph has been pruned by removing edges with 0 weights
-*node_community.out : gives the nodenumber and the corresponding community to which it belongs on each line
-*community_node_list.out : Gives the community wise list of nodes. A new line starts a new community
-*fscorecomp.out : the fscore of our algorithm
+* weighted\_graph.out : The 'merged' weighted graph formed from input1.txt .. input5.txt
+* pruned\_weighted\_graph.out : The above graph has been pruned by removing edges with 0 weights
+* node\_community.out : gives the nodenumber and the corresponding community to which it belongs on each line
+* community\_node\_list.out : Gives the community wise list of nodes. A new line starts a new community
+* fscorecomp.out : the fscore of our algorithm
 
 These output and binary files may be removed by using :
 
