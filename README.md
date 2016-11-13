@@ -27,8 +27,20 @@ All these files (including the original DBLP dataset) are available in *dataset/
 ## Running and Testing
 cd to  the project directory and type :
 ```bash
-*username:~/custom_path_here/CommunityDetection$* make run
+$ make run
 ```
 This prints the fscore of our merged community detection algorithm.
 
+Apart from that , it also generates the following output files
+*weighted_graph.out : The 'merged' weighted graph formed from input1.txt .. input5.txt
+*pruned\_weighted\_graph.out : The above graph has been pruned by removing edges with 0 weights
+*node_community.out : gives the nodenumber and the corresponding community to which it belongs on each line
+*community_node_list.out : Gives the community wise list of nodes. A new line starts a new community
+*fscorecomp.out : the fscore of our algorithm
+
+These output and binary files may be removed by using :
+
+```bash
+$ make clean
+```
 
