@@ -27,7 +27,7 @@ All these files (including the original DBLP dataset) are available in *dataset/
 ## Running and Testing
 cd to  the project directory and type :
 ```bash
-username:~/custom_path_here/CommunityDetection$ make run
+*username:~/custom_path_here/CommunityDetection$* make run
 ```
 This prints the fscore of our merged community detection algorithm.
 
