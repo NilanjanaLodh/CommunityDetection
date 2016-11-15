@@ -1,6 +1,6 @@
-# CommunityDetection
+# Community Detection in undirected social networks
 
-This project aims to merge the results of different community detection algorithms for undirected ,weighted graphs.
+This project aims to merge the results of different community detection algorithms for undirected ,weighted graphs and come up with a (hopefully) better results.
 
 ## Dependencies ##
 Python 2.7 must be installed and the following python libraries must be installed for the project to run.
@@ -25,7 +25,7 @@ WalkTrap            | input5.txt
 All these files (including the original DBLP dataset) are available in *dataset/* directory
 
 ## Running and Testing
-cd to  the project directory and type :
+Download/clone [this repository](https://github.com/NilanjanaLodh/CommunityDetection) and then, cd to the project directory and type :
 ```bash
 $ make run
 ```
@@ -37,10 +37,14 @@ Apart from that , it also generates the following output files
 * node\_community.out : gives the nodenumber and the corresponding community to which it belongs on each line
 * community\_node\_list.out : Gives the community wise list of nodes. A new line starts a new community
 * fscorecomp.out : the fscore of our algorithm
+* Graph.gml : The pruned weighted graph stored in gml ( graph markup language ) format. The primary purpose of generating this file is to be able to visualize using the software Gephi. 
 
-These output and binary files may be removed by using :
-
+These output and binary files may be removed from the project directory by using :
 ```bash
 $ make clean
 ```
+Since running the entire project and generating the output files may take some time ( ~ 30 minutes) , the output files generated on a single run have been included in the *Outputfiles/* directory.
 
+## Visualizing the graph structure
+
+The Graph.gml file can be directly opened using **Gephi** and visualized.

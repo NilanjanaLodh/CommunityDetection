@@ -1,7 +1,8 @@
 
-run : f_score.bin community_node_list.out dataset/ground-truth.txt
+run : f_score.bin Graph_obj_pickle community_node_list.out dataset/ground-truth.txt
 	./f_score.bin dataset/ground-truth.txt community_node_list.out fscorecomp.out
-
+	python pickletogml.py
+	
 f_score.bin : f_score.cpp
 	g++ f_score.cpp -std=c++11 -o f_score.bin 
 
